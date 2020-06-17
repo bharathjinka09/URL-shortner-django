@@ -20,7 +20,7 @@ def make(request):
 			new_url.save()
 		else:
 			form = UrlForm()
-			token = "Invalid URL"
+			token = "invalid"
 
 
 	return render(request, 'home.html',{'form':form, 'token':token})
