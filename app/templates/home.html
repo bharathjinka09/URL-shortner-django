@@ -23,7 +23,7 @@
          {% if token == 'invalid' %}
          <p>Invalid URL. Please try again.</p>
          {% else %}
-         Generated Link = <a href="/{{token}}">Shorten link</a>
+         Generated Shortened Link = <a href="/{{token}}">{{ request.build_absolute_uri }}{{ token }}</a>
          {% endif %}
       </div>
    </body>
